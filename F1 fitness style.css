@@ -93,7 +93,9 @@ opacity: 0.3;
 }
 #home::before{
     content: "";
-    background: url(https://github.com/Anjan14122002/F1-fitness/blob/b8f75f2018089f9d0e48a00190b9c6ebfb6408e7/4.jpg) no-repeat center center/cover ;
+   background-image: url('4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     height: 130%;
     width: 100%;
