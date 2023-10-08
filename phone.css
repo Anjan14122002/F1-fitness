@@ -44,7 +44,7 @@ width: 100%;
 }
 #home::before{
     height: 800px;
-    width: 400px;
+    width: 1030px;
     z-index: -1;
     opacity: 0.5;
 }
