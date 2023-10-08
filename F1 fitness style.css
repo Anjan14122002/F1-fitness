@@ -1,0 +1,341 @@
+{
+    margin:0;
+    padding:0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+CSS Variables
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+   position: relative;
+    top: 0px;
+    
+
+
+}
+/* logo and image */
+#logo{
+    display: flex;
+    margin: 3px 5px;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    
+}
+#logo img{
+    display: flex;
+    margin: 3px 5px;
+    height: 100px;
+    width: 100px;
+}
+body{
+    /* background-color: black; */
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    background-color: black;
+    margin: 0px;
+}
+
+#navbar ul{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 110px;
+    background-color: black;
+    width: 40%;
+    height: 50px;
+    
+    align-items: center;
+}
+#navbar::before{
+    display: flex;
+content: "";
+background-color: black;
+position: sticky;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.3;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0px;
+    
+}
+#home::before{
+    content: "";
+    background: url(../4.jpg) no-repeat center center/cover ;
+    position: absolute;
+    height: 130%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+
+#home h1{
+    color: white;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+    font-size: 3.8rem;
+    text-shadow: 4px 4px black;
+    
+}
+#home p {
+    color: white;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 4px 4px black;
+}
+.btn{
+    padding: 6px 20px;
+    border: 3px solid white;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* services section */
+#services-container{
+    
+    background-color: black;
+    margin: 0px;
+    height: 650px;
+    width: 100%;
+    top: 0px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    background-color: black;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    height: 400px;
+    padding: 20px;
+    margin: 4px;
+    border-radius: 12px;
+    width: 450px;
+    background-color: #e40000;
+   color: white;
+   
+}
+#services .box img{
+    
+    height: 200px;
+    width: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 16px;
+    padding-top: 4px;
+
+}
+#gallery-container{
+    height: 1400px;
+    width: 100%;
+}
+#gallery{
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+/* Gallery box styling */
+#gallery-container h1{
+
+    color: white;
+    margin-top: 0px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+    font-size: 3.8rem;
+    text-shadow: 4px 4px black;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    padding: 10px;
+}
+#gallery .box {
+    
+    border: 2px solid black;
+    height: 400px;
+    margin: 6px;
+    border-radius: 16px;
+    width: 32%;
+    border: 2px solid #e40000;
+    
+}
+#gallery .box img{
+    
+    height: 400px;
+    width: 100%;
+    display: block;
+   
+    border-radius: 16px;
+    
+}
+/* About us Section */
+#about{
+    margin: 0px;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    color: white;
+    display: block;
+    
+
+    
+}
+#about-container {
+    background-color: black;
+    margin: 0px;
+    height: 900px;
+    width: 100%;
+    top: 0px;
+    
+    
+    
+}
+#about .box img{
+    display: block;
+    height: 400px;
+    width: 33%;
+    border-radius: 16px;
+    padding: 10px;
+   
+    
+}
+#about .box{
+    height: 450px;
+    width: 99%;
+    display: flex;
+    flex-direction: row wrap;
+    border: 2px solid #e40000;
+    border-radius: 12px;
+    margin: 10px;
+   position: absolute;
+    
+}
+
+#caption{
+    display: block;
+    position: relative;
+    top: 450px;
+    height: 200px;
+    padding: 20px;
+    width: 100%;
+    font-size: 30px;
+    
+   color: white;
+   text-align: center;
+   padding-top: 5px;
+   
+}
+
+
+/* contact us section */
+#contact-container{
+    background-color: black;
+    
+    color: white;
+    margin: 0px;
+    height: 300px;
+    width: 100%;
+    top: 0px;
+}
+#contact-container p{
+    color: white;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+}
+#links{
+    display: flex;
+    margin: 20px;
+    font-size: 30px;
+    text-align: justify;
+    text-align: center;
+    padding: 10px;
+}
+#google{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 10px;
+    filter: invert();
+    padding: 10px;
+
+}
+#insta{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+
+}
+/* utility classes */
+.h-primary{
+    color: white;
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+    font-size: 3.8rem;
+    text-shadow: 4px 4px black;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 10px;
+
+}
+.h-secondary{
+
+    font-size: 2.0rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 3px solid white;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

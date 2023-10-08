@@ -1,0 +1,143 @@
+/* Navigation section */
+#navbar{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   margin: auto;
+   margin-bottom: 30px;
+}
+#navbar ul li a{
+    font-size: 1.0rem ;
+    padding: 0px 10px;
+    font-weight: bolder;
+    
+    
+    
+
+}
+#navbar::before{
+    position: fixed;
+    background-color: black;
+}
+#navbar ul{
+margin-left: -130px;
+position: fixed;
+top: 50px;
+
+
+}
+#logo{
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    
+   
+    
+}
+
+/* home section */
+#home{
+    height: 800px;
+    width: 20px;
+}
+#home::before{
+    height: 800px;
+    width: 400px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home h1{
+    font-size: 2.5rem;
+    width: 400px;
+    height: 100px;
+    
+}
+#home p{
+    font-size: 1.5rem;
+    padding: 0px;
+    margin: 0px 0px;
+    width: 360px;
+    height: 250px;
+    
+}
+.btn{
+    font-size: 1.5rem;
+    width: 260px;
+}
+
+/* services section */
+#services-container{
+    height: 1900px;
+    width: 400px;
+    
+}
+#services{
+    flex-direction: column;
+    margin: 15px 5px;
+}
+#services .box{
+    height: 550px;
+    width: 380px;
+    margin: 15px 5px;
+    padding: 0px;
+    font-size: 1.0rem;
+}
+#services .box img{
+    height: 300px;
+    width: 350px ;
+}
+.h-primary{
+    font-size: 2.5rem;
+}
+/* gallery */
+#gallery{
+    overflow: hidden;
+}
+#gallery-container{
+    height: 4200px;
+    width: 100%;
+}
+#gallery{
+    flex-direction: column;
+    width: 100%;
+}
+#gallery .box{
+    height: 400px;
+    width: 90%;
+    margin: 20px 15px;
+}
+
+/* about section */
+#about-container{
+  height: 1500px;
+}
+#about{
+ 
+    
+}
+#about .box{
+height: 675px;
+width: 90%;
+flex-direction: column;
+margin-left: 0px;
+border: none;
+padding: 10px;
+}
+#about .box img{
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    
+}
+#caption{
+    font-size: 1.8rem;
+    top: 700px;
+    width: 90%;
+
+}
+/* contact us */
+#contact-container{
+    overflow: hidden;
+    height: 800px;
+}
