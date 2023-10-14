@@ -113,7 +113,7 @@ body {
 
 #home::before {
     content: "";
-    background: url(../4.jpg) no-repeat center center/cover;
+    background: url(4.jpg) no-repeat center center/cover;
     position: absolute;
     height: 195%;
     width: 100%;
