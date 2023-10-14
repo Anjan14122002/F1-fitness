@@ -1,117 +1,136 @@
-{
-    margin:0;
-    padding:0;
-
-}
-html{
+html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 CSS Variables
 /* navigation bar */
-#navbar{
-    display: flex;
-    align-items: center;
-   position: relative;
-    top: 0px;
-    
 
-
-}
 /* logo and image */
-#logo{
+#logo {
     display: flex;
-    margin: 3px 5px;
-    height: 100px;
-    width: 100px;
+    margin: 2px 2px;
+    height: 60px;
+    width: 60px;
     position: fixed;
-    
+    border: 2px solid red;
 }
-#logo img{
+
+#logo img:hover {
+    cursor: pointer;
+}
+
+#logo img {
     display: flex;
-    margin: 3px 5px;
-    height: 100px;
-    width: 100px;
+    margin: 0px 0px;
+    height: 60px;
+    width: 60px;
 }
-body{
+
+body {
     /* background-color: black; */
     font-family: 'IBM Plex Sans KR', sans-serif;
-    background-color: black;
+   
     margin: 0px;
 }
 
-#navbar ul{
+#navbar {
     display: flex;
-    position: fixed;
-    top: 20px;
-    left: 110px;
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    
     align-items: center;
-}
-#navbar::before{
-    display: flex;
-content: "";
-background-color: black;
-position: sticky;
-height: 100%;
-width: 100%;
-z-index: -1;
-opacity: 0.3;
+    position: fixed;
+    top: 0px;
+
+
 
 }
-#navbar ul li{
+
+#navbar ul {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 60px;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    align-items: center;
+    z-index: 1;
+}
+
+#navbar::before {
+    display: flex;
+    content: "";
+    background-color: black;
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.3;
+
+}
+
+
+
+#navbar ul li {
     list-style: none;
     font-size: 1.3rem;
+
+
+
 }
-#navbar ul li a{
+
+#navbar ul li a {
     display: block;
     padding: 3px 22px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
     font-weight: bolder;
-    
+
+
+
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
     background-color: white;
     color: black;
-    
+
 }
+
 /* Home Section */
-#home{
+#home {
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 750px;
     margin: 0px;
     
+
+
 }
-#home::before{
+
+#home::before {
     content: "";
-   background-image: url('4.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(../4.jpg) no-repeat center center/cover;
     position: absolute;
-    height: 130%;
+    height: 195%;
     width: 100%;
     z-index: -1;
     opacity: 1;
-
+    
 }
 
-#home h1{
+#home h1 {
     color: white;
     font-family: 'IBM Plex Sans KR', sans-serif;
     text-align: center;
     font-size: 3.8rem;
     text-shadow: 4px 4px black;
-    
+
 }
+
 #home p {
     color: white;
     font-family: 'IBM Plex Sans KR', sans-serif;
@@ -119,7 +138,8 @@ opacity: 0.3;
     font-size: 1.8rem;
     text-shadow: 4px 4px black;
 }
-.btn{
+
+.btn {
     padding: 6px 20px;
     border: 3px solid white;
     background-color: red;
@@ -129,22 +149,26 @@ opacity: 0.3;
     border-radius: 6px;
     cursor: pointer;
 }
+
 /* services section */
-#services-container{
-    
+#services-container {
+
     background-color: black;
     margin: 0px;
-    height: 650px;
+    height: 700px;
     width: 100%;
     top: 0px;
+    
 }
-#services{
+
+#services {
     margin: 34px;
     display: flex;
     background-color: black;
-    
+
 }
-#services .box{
+
+#services .box {
     border: 2px solid brown;
     height: 400px;
     padding: 20px;
@@ -152,11 +176,12 @@ opacity: 0.3;
     border-radius: 12px;
     width: 450px;
     background-color: #e40000;
-   color: white;
-   
+    color: white;
+
 }
-#services .box img{
-    
+
+#services .box img {
+
     height: 200px;
     width: 400px;
     display: block;
@@ -165,19 +190,24 @@ opacity: 0.3;
     padding-top: 4px;
 
 }
-#gallery-container{
-    height: 1400px;
+
+#gallery-container {
+    height: 1430px;
     width: 100%;
+    background-color: black;
+
+
 }
-#gallery{
+
+#gallery {
     margin: 0px;
     display: flex;
     flex-flow: row wrap;
-    
+
 }
 
 /* Gallery box styling */
-#gallery-container h1{
+#gallery-container h1 {
 
     color: white;
     margin-top: 0px;
@@ -185,11 +215,12 @@ opacity: 0.3;
     text-align: center;
     font-size: 3.8rem;
     text-shadow: 4px 4px black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-bottom: 0px;
     padding: 10px;
 }
-#gallery .box {
+
+/* #gallery .box {
     
     border: 2px solid black;
     height: 400px;
@@ -198,18 +229,72 @@ opacity: 0.3;
     width: 32%;
     
     
-}
-#gallery .box img{
-    
+} */
+#gallery .box img {
+
     height: 400px;
     width: 100%;
     display: block;
-   
-    border-radius: 16px;
-    
+
+    /* border-radius: 16px; */
+
 }
+
+#gallery .box {
+    background: #4f4f4f;
+    width: 30%;
+    height: 400px;
+    position: static;
+    border-radius: 6px;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: .5s all;
+    margin: 20px;
+}
+
+#gallery .box:hover {
+    transition: .5s all;
+    transform: scale(1.1);
+}
+
+#gallery .box::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-image: linear-gradient(var(--rotate), #ff5d5d, #e33c3c 30%, #c20000);
+    position: absolute;
+    z-index: -2;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    animation: spin 2.5s linear infinite;
+}
+
+#gallery .box::after {
+    position:absolute;
+    content: "";
+    top: calc(400px / 6);
+    left: 0;
+    right: 0;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #ff5d5d, #e33c3c 43%, #c20000);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
 /* About us Section */
-#about{
+#about {
     margin: 0px;
     height: 400px;
     width: 100%;
@@ -218,40 +303,43 @@ opacity: 0.3;
     display: block;
     
 
-    
+
 }
+
 #about-container {
     background-color: black;
     margin: 0px;
     height: 900px;
     width: 100%;
     top: 0px;
-    
-    
-    
+
+
+
 }
-#about .box img{
+
+#about .box img {
     display: block;
     height: 400px;
     width: 33%;
     border-radius: 16px;
     padding: 10px;
-   
-    
+    z-index: 0;
+
 }
-#about .box{
+
+#about .box {
     height: 450px;
     width: 99%;
     display: flex;
     flex-direction: row wrap;
-    border: 2px solid #e40000;
+   
     border-radius: 12px;
     margin: 10px;
-   position: absolute;
-    
+    position: absolute;
+
 }
 
-#caption{
+#caption {
     display: block;
     position: relative;
     top: 450px;
@@ -259,32 +347,34 @@ opacity: 0.3;
     padding: 20px;
     width: 100%;
     font-size: 30px;
-    
-   color: white;
-   text-align: center;
-   padding-top: 5px;
-   
+
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+
 }
 
 
 /* contact us section */
-#contact-container{
-    background-color: black;
-    
+#contact-container {
+
+    background-image: linear-gradient(360deg, rgb(155, 20, 20), rgb(6, 6, 6));
     color: white;
     margin: 0px;
-    height: 300px;
+    height: 700px;
     width: 100%;
     top: 0px;
 }
-#contact-container p{
+
+#contact-container p {
     color: white;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 30px;
     padding: 10px;
     margin: 20px;
 }
-#links{
+
+#links {
     display: flex;
     margin: 20px;
     font-size: 30px;
@@ -292,27 +382,193 @@ opacity: 0.3;
     text-align: center;
     padding: 10px;
 }
-#google{
-    height: 100px;
-    width: 100px;
+
+#google {
+    height: 80px;
+    width: 80px;
     display: block;
     margin: 10px;
     filter: invert();
     padding: 10px;
 
 }
-#insta{
-    height: 100px;
-    width: 100px;
+
+#insta {
+    height: 80px;
+    width: 80px;
     display: block;
     margin: 10px;
     padding: 10px;
 
 }
-/* utility classes */
-.h-primary{
+#maps{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    filter: invert();
+}
+#maps img{
+    background-blend-mode: screen;
+}
+
+.card {
+    background: #4f4f4f;
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    border-radius: 6px;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: .5s all;
+    margin: 15px;
+}
+
+.card .card__title {
+    font-size: 1em;
+    margin: 4px;
+    color: #fff;
+    background: #191c29;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transition: .5s all;
+    transform: scale(1.1);
+}
+
+.card:hover:before,
+.card:hover:after {
+    animation: spin;
+}
+
+.card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #ff5d5d, #e33c3c 43%, #c20000);
+    position: absolute;
+    z-index: -2;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #ff5d5d, #e33c3c 43%, #c20000);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+/*Adicionar ao root*/
+:root {
+    --card-height: 400px;
+    --card-width: 300px;
+}
+
+h4 {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    align-self: center;
     color: white;
-    margin-top: 20px;
+    height: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.card li {
+    list-style: disc;
+    text-align: left;
+    padding: 3px 15px;
+    color: white;
+}
+
+
+/*FIM CARD-19*/
+
+
+/* ignorar, coisas da doutores já prontas no atual style-base */
+/* GRID SYSTEM */
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid
+}
+
+.grid:after{
+    content: "";
+    clear: both;
+}
+.grid:before {
+    clear: both
+}
+
+.grid-col-4 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 100%;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#Membership {
+    min-height: 100vh;
+    background-image: linear-gradient(360deg, rgb(155, 20, 20), rgb(6, 6, 6));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    margin: auto;
+    height: 800px;
+}
+
+/* utility classes */
+.h-primary {
+    color: white;
+    margin-top: 0px;
     font-family: 'IBM Plex Sans KR', sans-serif;
     text-align: center;
     font-size: 3.8rem;
@@ -322,13 +578,15 @@ opacity: 0.3;
     padding: 10px;
 
 }
-.h-secondary{
+
+.h-secondary {
 
     font-size: 2.0rem;
     padding: 12px;
 
 }
-.btn{
+
+.btn {
     padding: 6px 20px;
     border: 3px solid white;
     background-color: red;
@@ -338,6 +596,7 @@ opacity: 0.3;
     border-radius: 6px;
     cursor: pointer;
 }
-.center{
+
+.center {
     text-align: center;
 }
