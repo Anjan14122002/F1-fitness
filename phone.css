@@ -1,37 +1,62 @@
 /* Navigation section */
+/* Styles for the burger icon and hidden menu */
 #navbar{
-    display: flex;
-   flex-direction: column;
-   align-items: center;
-   
-   margin: auto;
-   margin-bottom: 30px;
-}
-#navbar ul li a{
-    font-size: 1.0rem ;
-    padding: 0px 10px;
-    font-weight: bolder;
-    
-    
-    
+    width: 100%;
+    top:5px;
 
 }
-#navbar::before{
-    position: fixed;
-    background-color: black;
+#burger-icon {
+    display: none; /* Hide the burger icon by default */
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
 }
-#navbar ul{
-margin-left: -130px;
-position: fixed;
-top: 50px;
-width: 100%;
 
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(252, 250, 250);
+    margin: 6px 0;
+    align-items: end;
+}
 
+/* Media query for phones (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    #burger-icon {
+        display: block; /* Show the burger icon on phones */
+    }
+
+    #navbar ul {
+        display: none; /* Hide the menu by default on phones */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color:linear-gradient (90deg, rgb(155, 20, 20), rgb(6, 6, 6));
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #navbar ul.show {
+        display: flex; /* Show the menu when the class 'show' is added */
+        height: 300px;
+        width: 400px;
+      
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+    .item{
+        padding: 8px 8px;
+        text-align:center;
+    }
 }
 #logo{
     flex-direction: column;
     align-items: center;
     position: fixed;
+    top: 1px;
     
    
     
@@ -41,12 +66,13 @@ width: 100%;
 #home{
     height: 800px;
     width: 20px;
+    padding: 0px 0px;
 }
 #home::before{
     height: 800px;
-    width: 1030px;
+    width: 100%;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 1;
 }
 #home h1{
     font-size: 2.5rem;
@@ -70,7 +96,7 @@ width: 100%;
 /* services section */
 #services-container{
     height: 1900px;
-    width: 400px;
+    width: 100%;
     
 }
 #services{
@@ -140,5 +166,90 @@ padding: 10px;
 /* contact us */
 #contact-container{
     overflow: hidden;
-    height: 800px;
+    height: 1000px;
+}
+#links{
+    margin: 8px;
+    padding: 0px;
+
+}
+{
+    [class*="grid-col-"] { grid-template-columns: repeat(1, 1fr); }
+}
+body {
+min-height: 100vh;
+
+display: flex;
+align-items: center;
+flex-direction: column;
+
+box-sizing: border-box;
+}
+.card {
+    width: 100%; /* Make the cards full-width on small screens */
+    margin: 10px 0; /* Adjust margin for smaller screens */
+}
+
+.card .card__title {
+    font-size: 0.8em; /* Reduce font size for card titles */
+}
+
+.h-primary {
+    font-size: 2.5rem; /* Reduce font size for primary headings */
+}
+
+.h-secondary {
+    font-size: 1.5rem; /* Reduce font size for secondary headings */
+}
+
+.btn {
+    font-size: 1.2rem; /* Reduce button font size */
+}
+
+.grid-col-4 {
+    grid-template-columns: repeat(1, 1fr); /* Display a single column on small screens */
+    grid-gap: 20px; /* Adjust grid gap for smaller screens */
+}
+
+/* Keep your existing styles for larger screens */
+.card {
+/* ... (your existing styles) */
+}
+
+.card .card__title {
+/* ... (your existing styles) */
+}
+
+.h-primary {
+/* ... (your existing styles) */
+}
+
+.h-secondary {
+/* ... (your existing styles) */
+}
+
+.btn {
+/* ... (your existing styles) */
+}
+
+.grid-col-4 {
+/* ... (your existing styles) */
+}
+#Membership{
+    height: fit-content;
+    width: 100%;
+}
+
+#google
+{
+    height: 60px;
+    width: 60px;
+}
+#insta{
+    height: 60px;
+    width: 60px;
+}
+#maps{
+    height: 60px;
+    width: 60px;
 }
