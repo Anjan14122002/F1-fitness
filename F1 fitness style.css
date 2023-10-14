@@ -417,7 +417,7 @@ body {
     background: #4f4f4f;
     width: var(--card-width);
     height: var(--card-height);
-    position: relative;
+    position: static;
     border-radius: 6px;
     flex-direction: column;
     text-align: center;
