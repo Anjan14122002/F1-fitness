@@ -244,7 +244,7 @@ body {
     background: #4f4f4f;
     width: 30%;
     height: 400px;
-    position: static;
+    position: relative;
     border-radius: 6px;
     flex-direction: column;
     text-align: center;
